@@ -6,7 +6,7 @@
   "author": "Mykola Ruban <rubannn@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build --base=/goit-markup-final/",
     "preview": "vite preview"
   },
