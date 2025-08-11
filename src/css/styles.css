@@ -6,13 +6,15 @@
 */
 /* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('./basic.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
+@import url('./hero.css');      /* 02 - "Hero" section */
+@import url('./about.css');     /* 03 - "About us" section */
+@import url('./lessons.css');   /* 04 - "Our lesson" section */
+@import url('./proposal.css');  /* 05 - "Proposal to leave an application" section */
+@import url('./teachers.css');  /* 06 - "Our teachers" section */
+@import url('./leave.css');     /* 07 - "Leave an application" section */
+@import url('./reviews.css');   /* 08 - "Reviews" section */
 @import url('./footer.css');
