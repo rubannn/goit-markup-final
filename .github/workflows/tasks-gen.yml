@@ -1,0 +1,49 @@
+name: Create Issues from tasks.txt
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tasks.txt'
+
+jobs:
+  create-issues:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Parse tasks.txt and create issues
+      id: create-issues
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const content = fs.readFileSync('tasks.txt', 'utf8');
+          
+          // Split into blocks
+          const blocks = content.split('==').filter(block => block.trim());
+          
+          for (const block of blocks) {
+            const [blockNumber, ...tasks] = block.split('~');
+            const blockNum = blockNumber.trim().replace(/=/g, '');
+            
+            for (const task of tasks) {
+              if (!task.trim()) continue;
+              
+              const [title, ...bodyLines] = task.split('\n');
+              const body = bodyLines.join('\n').trim();
+              
+              const issueTitle = `${blockNum}-${title.trim()}`;
+              
+              // Create issue
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: issueTitle,
+                body: body,
+                labels: ['task']
+              });
+              
+              console.log(`Created issue: ${issueTitle}`);
+            }
+          }
