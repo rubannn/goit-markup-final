@@ -40,6 +40,7 @@ h2 {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  margin-bottom: 40px
 }
 
 .container-main {
