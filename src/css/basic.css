@@ -18,7 +18,7 @@ h2 {
   letter-spacing: 1.125px;
   color: var(--black);
   text-align: center;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
