@@ -5,8 +5,8 @@
 }
 
 .site-footer {
-    background-color: var(--background-dark);
-    color: var(--light-text);
+    background-color: var(--black);
+    color: var(--white);
     padding-top: 64px;
     padding-bottom: 32px;
 }
@@ -44,7 +44,7 @@
 }
 
 .footer-nav a:hover img {
-    color: var(--primary-green);
+    color: var(--green-main);
 }
 
 .footer-col-social .social-links {
@@ -53,15 +53,15 @@
 }
 
 .footer-col-social .social-links a {
-    border-color: var(--border-dark);
+    border-color: var(--grey-border-light);
 }
 
 .footer-col-social .social-links a:hover {
-    border-color: var(--primary-green);
+    border-color: var(--green-main);
 }
 
 .footer-col-social .social-links svg {
-    fill: var(--light-text);
+    fill: var(--white);
 }
 
 .legal-links {
@@ -76,7 +76,7 @@
 .footer-divider {
     border: none;
     height: 1px;
-    background-color: var(--border-dark);
+    background-color: var(--grey-border-light);
     margin: 0;
 }
 
