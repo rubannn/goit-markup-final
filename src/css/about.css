@@ -1,0 +1,70 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-descr {
+  text-align: center;
+}
+
+.about-text {
+  max-width: 658px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about-grid {
+  color: var(--green-main);
+  list-style: none;
+  counter-reset: list-item;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-grid {
+    width: 66%;
+  }
+}
+
+.about-grid-item {
+  counter-increment: list-item;
+
+  padding: 32px;
+  background-color: var(--grey);
+  border-radius: 16px;
+}
+
+.about-grid-item::before {
+  content: '0' counter(list-item);
+  /* position: absolute; */
+  /* left: 25px; /* Позиціонуємо маркер */
+  /* top: 25px; */
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: bold;
+  color: var(--green-main);
+}
+
+.about-grid-text {
+  color: var(--black);
+  padding-top: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
