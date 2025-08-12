@@ -132,3 +132,18 @@ h2 {
     height: 20px;
   }
 }
+
+.section-text {
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 64px;
+  }
+}

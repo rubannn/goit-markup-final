@@ -12,14 +12,13 @@
   }
 }
 
-/* .about-header {
-  display: inline-block;
+.about-descr {
+  text-align: center;
 }
 
-
-
- */
-
+.about-text {
+  max-width: 658px;
+}
 
 .about-grid {
   color: var(--green-main);
