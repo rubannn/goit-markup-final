@@ -40,7 +40,7 @@ h2 {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  margin-bottom: 40px
+  margin-bottom: 40px;
 }
 
 .container-main {
@@ -149,3 +149,12 @@ h2 {
   }
 }
 
+.section-container {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-container {
+    margin-bottom: 100px;
+  }
+}

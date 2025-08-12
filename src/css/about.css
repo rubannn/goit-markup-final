@@ -1,16 +1,10 @@
 .about-container {
-  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  .about-container {
-    margin-bottom: 100px;
-  }
-}
 
 .about-descr {
   text-align: center;
