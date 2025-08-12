@@ -16,7 +16,20 @@
 .about-content {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  min-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-content {
+    max-width: 815px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-content {
+    flex-direction: row;
+    max-width: 1024px;
+  }
 }
 
 .about-grid {
@@ -67,4 +80,30 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.about-memoji-container {
+  margin-top: 20px;
+  background-color: var(--green-main);
+  height: 313px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-memoji-container {
+    margin-top: 32px;
+    height: 243px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-memoji-container {
+    margin-top: 0;
+    margin-left: 32px;
+    width: 33%;
+    height: 352px;
+  }
 }
