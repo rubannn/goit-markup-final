@@ -94,7 +94,7 @@
 .scroll-down:hover > .scroll-icon,
 .scroll-down:focus > .scroll-icon,
 .scroll-down:active > .scroll-icon {
-  fill: var(--white)
+  fill: var(--white);
 }
 
 
