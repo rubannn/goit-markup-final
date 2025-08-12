@@ -1,19 +1,15 @@
-/*!!!!DELETE!!!!!!*/
-
-.site-header {
-  display: none;
-}
-
-/*!!!!!DELETE!!!!!*/
-
-.teachers-header {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.4px;
-  text-align: center;
-  margin-bottom: 16px;
-}
+/*.teachers-heading {*/
+/*  margin-left: auto;*/
+/*  margin-right: auto;*/
+/*}*/
+/*.teachers-header {*/
+/*  font-size: 32px;*/
+/*  font-weight: 700;*/
+/*  line-height: 36px;*/
+/*  letter-spacing: 0.4px;*/
+/*  text-align: center;*/
+/*  margin-bottom: 16px;*/
+/*}*/
 
 .teachers-text {
   font-size: 14px;
@@ -26,8 +22,12 @@
 
 .teachers-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 40px;
+
 }
 
 .teachers-list-item {
@@ -47,6 +47,7 @@
   line-height: 24px;
   letter-spacing: 0.4px;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .teachers-item-text {
@@ -55,4 +56,43 @@
   line-height: 24px;
   text-align: center;
   color: #12141780;
+}
+
+@media screen and (min-width: 375px){
+  .container-teachers {
+    max-width: 375px;
+  }
+  .teachers-list {
+    gap: 32px;
+  }
+  .teachers-heading, .teachers-list-item {
+    max-width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .container-teachers {
+    max-width: 768px;
+  }
+  .teachers-heading {
+    max-width: 550px;
+  }
+  .teachers-list-item {
+    max-width: 272px;
+  }
+  .teachers-item-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-teachers {
+    max-width: unset
+  }
+  .teachers-text {
+    margin-bottom: 64px;
+  }
+  .teachers-list-item {
+    max-width: 232px;
+  }
 }
