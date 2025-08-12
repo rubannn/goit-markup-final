@@ -1,0 +1,58 @@
+/*!!!!DELETE!!!!!!*/
+
+.site-header {
+  display: none;
+}
+
+/*!!!!!DELETE!!!!!*/
+
+.teachers-header {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.teachers-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #12141780;
+  margin-bottom: 40px;
+}
+
+.teachers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.teachers-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teachers-item-image {
+  margin-bottom: 16px;
+  border-radius: 50%;
+}
+
+.teachers-item-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.teachers-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #12141780;
+}
