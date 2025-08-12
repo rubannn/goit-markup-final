@@ -48,13 +48,13 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container-main {
     padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .container-main {
     padding: 0 64px;
   }
 }
@@ -147,3 +147,4 @@ h2 {
     margin-bottom: 64px;
   }
 }
+
