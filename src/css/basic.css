@@ -139,6 +139,7 @@ h2 {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -164,3 +165,4 @@ h2 {
     margin-bottom: 150px;
   }
 }
+
