@@ -81,7 +81,7 @@
 .scroll-down:focus,
 .scroll-down:active {
   background-color: var(--green-main);
-  font: var(--white)
+  color: var(--white);
   
 }
 
