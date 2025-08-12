@@ -1,28 +1,98 @@
-:root {
-  --primary-green: #4dc274;
-  --light-green-1: #bee8cc;
-  --light-green-2: #d4fde1;
-  --dark-text: #121417;
-  --light-text: #ffffff;
-  --grey-text: rgba(18, 20, 23, 0.5);
-  --grey-text-light: rgba(255, 255, 255, 0.6);
-  --background-light: #ffffff;
-  --background-dark: #121417;
-  --background-grey: #f3f5f6;
-  --border-light: rgba(18, 20, 23, 0.1);
-  --border-dark: rgba(255, 255, 255, 0.1);
-  --basic-font: 'Manrope', sans-serif;
+* {
+  box-sizing: border-box;
 }
 
 body {
   font-family: var(--basic-font);
-  background-color: var(--background-light);
-  color: var(--dark-text);
+  background-color: var(--white);
+  color: var(--black);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 26px;
+  letter-spacing: -2%;
+  color: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container-main {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 64px;
+  }
+}
+
+/*btns*/
+
+.btn {
+  display: inline-flex;
+  background-color: var(--green-main);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.btn-primary {
+  background-color: var(--green-main);
+  color: var(--white);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--green-pressed);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--white);
+  color: var(--green-main);
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }

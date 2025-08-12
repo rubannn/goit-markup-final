@@ -18,7 +18,7 @@
 }
 
 .logo-green {
-    color: var(--primary-green);
+    color: var(--green-main);
 }
 
 .main-nav ul {
@@ -34,7 +34,7 @@
 }
 
 .main-nav a:hover {
-    color: var(--primary-green);
+    color: var(--green-main);
 }
 
 .social-links {
@@ -48,7 +48,7 @@
     align-items: center;
     width: 44px;
     height: 44px;
-    border: 1px solid var(--border-light);
+    border: 1px solid var(--grey-border);
     border-radius: 10px;
     transition: border-color 0.3s ease;
 }
@@ -60,7 +60,7 @@
 }
 
 .social-links a:hover {
-    border-color: var(--primary-green);
+    border-color: var(--green-main);
 }
 
 .site-header .container {
