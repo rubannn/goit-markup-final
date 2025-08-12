@@ -57,7 +57,7 @@
 }
 
 .footer-col-social .social-links a:hover {
-  border-color: var(--primary-green);
+  border-color: var(--green-main);
 }
 
 .footer-col-social .social-links svg {
