@@ -1,0 +1,47 @@
+.about-container {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    margin-bottom: 100px;
+  }
+}
+
+/* .about-header {
+  display: inline-block;
+}
+
+
+
+ */
+
+
+.about-grid {
+  color: var(--green-main);
+  list-style: none;
+  counter-reset: list-item;
+}
+
+.about-grid-item {
+  counter-increment: list-item;
+
+}
+
+.about-grid-item::before {
+  content: '0' counter(list-item); 
+  /* position: absolute; */
+  /* left: 25px; /* Позиціонуємо маркер */
+  /* top: 25px; */
+  /* font-size: 28px; */
+  /* font-weight: bold; */
+  color: #4caf50; /* Колір, як на зображенні */
+}
+
+.about-grid-text {
+  color: var(--black);
+}
