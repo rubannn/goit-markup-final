@@ -1,0 +1,18 @@
+:root {
+  --black: #121417;
+  --white: #ffffff;
+  --grey: #f3f5f6;
+  --green-main: #4dc274;
+  --green-pressed: #38ae5f;
+  --green-accent: #d4fde1;
+
+  --bg-gradient: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
+
+  --grey-text: rgba(18, 20, 23, 0.502);
+  --grey-text-light: rgba(255, 255, 255, 0.6);
+
+  --grey-border: rgba(18, 20, 23, 0.102);
+  --grey-border-light: rgba(255, 255, 255, 0.1);
+
+  --basic-font: 'Manrope', sans-serif;
+}
