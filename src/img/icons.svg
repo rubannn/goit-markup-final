@@ -3,13 +3,6 @@
 <symbol id="icon-check" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M26.667 8l-14.667 14.667-6.667-6.667"></path>
 </symbol>
-<symbol id="icon-icon" viewBox="0 0 32 32">
-<path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M23.619 10.286l-10.476 10.476-4.762-4.762"></path>
-</symbol>
-<symbol id="icon-Vector-1" viewBox="0 0 43 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M39.111 2.667l-24.445 24.445-11.111-11.111"></path>
-</symbol>
 <symbol id="icon-burger-lg" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M6.070 8.351h24.73"></path>
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M6.070 21.927h24.73"></path>
