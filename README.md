@@ -22,32 +22,28 @@ This repository contains the final project for the GoIT Markup course, showcasin
 ## Development team:
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=plastic&logo=github&logoColor=white)](https://github.com/rubannn)
-  Mykola Ruban **Team Lead** development of the section **Footer**
+  _Mykola Ruban_ **Team Lead** development of the section **Footer**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=plastic&logo=github&logoColor=white)](https://github.com/Vi-encore)
-  Viktoriia Matiushko **Scrum Master** development of the section **About us**
+  _Viktoriia Matiushko_ **Scrum Master** development of the section **About us**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=plastic&logo=github&logoColor=white)](https://github.com/b01ma)
-  Eduard Bolma **Front End Developer** development of the section **Hero**
+  _Eduard Bolma_ **Front End Developer** development of the section **Hero**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=plastic&logo=github&logoColor=white)](https://github.com/sanyanut)
-  Alexander Sorochinskiy **Front End Developer** development of the sections **Reviews** and **Our teachers**
+  _Alexander Sorochinskiy_ **Front End Developer** development of the sections **Reviews** and **Our teachers**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=plastic&logo=github&logoColor=white)](https://github.com/Olha-Fursova)
-  Olha Fursova **Front End Developer** development of the section **Proposal to
-  leave an application**
+  _Olha Fursova_ **Front End Developer** development of the section **Proposal to leave an application**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=plastic&logo=github&logoColor=white)](https://github.com/osovetovs)
-  Olegs Sovetovs **Front End Developer** development of the section **Header**
+  _Olegs Sovetovs_ **Front End Developer** development of the section **Header**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=plastic&logo=github&logoColor=white)](https://github.com/sidor91)
-  Serhii Sydorenko **Front End Developer** development of the section **Our
-  lessons**
-
+  _Serhii Sydorenko_ **Front End Developer** development of the section **Our lessons**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=plastic&logo=github&logoColor=white)](https://github.com/elenabadun)
-  Elena Badun **Front End Developer** development of the section **Leave an
-  application**
+  _Elena Badun_ **Front End Developer** development of the section **Leave an application**
 
 ---
 
