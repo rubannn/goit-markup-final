@@ -1,35 +1,42 @@
 .proposal-section {
   margin-bottom: 150px;
+  min-width: 335px;
   padding: 0 20px;
 }
 
 .proposal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 478px;
+  min-width: 335px;
   background-image: var(--bg-gradient);
-  border-radius: 30px;
-  max-width: 1152px;
-  min-width: 704px;
-  min-height: 950px; 
-  padding: 64px;
+  border-radius: 16px;
+
+  min-height: 737px;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.proposal-title {
+  max-width: 295px;
+  color: #fff;
+  text-align: left;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 40px;
+  letter-spacing: 0em;
+  margin-bottom: 65px;
 }
 
 .title-highlight {
   color: var(--green-highlight);
   text-align: left;
-  font-size: 60px;
+  font-size: 38px;
   font-weight: bold;
-  line-height: 70px;
+  line-height: 40px;
   letter-spacing: 0em;
-}
-
-.proposal-title {
-  max-width: 776px;
-  color: #fff;
-  text-align: left;
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 70px;
-  letter-spacing: 0em;
-  margin-bottom: 122px;
 }
 
 .proposal-list-container {
@@ -37,30 +44,28 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
-  margin: 64px;
+  gap: 20px;
+  padding: 40px 20px;
   z-index: 1;
 }
 
 .proposal-wraper {
-  max-width: 1104px;
   display: flex;
   align-items: center;
   position: relative;
 }
 
 .proposal-list {
-  width: 654px;
+  max-width: 255px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-right: 92px;
 }
 
 .proposal-list-header {
   text-align: left;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 20px;
+  line-height: 24px;
   letter-spacing: -0.02em;
   margin: 0;
 }
@@ -68,43 +73,36 @@
 .proposal-list-item {
   display: flex;
   align-items: center;
-  gap: 16px;
-}
-
-.proposal-list-item span {
-  width: 28px;
-  height: 28px;
-}
-
-.proposal-icon {
-  width: 28px;
-  height: 28px;
-  background-color: var(--green-main);
-  border-radius: 50%;
-  fill: #ffffff;
+  gap: 8px;
 }
 
 .proposal-list-text {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 20px;
   letter-spacing: -0.02em;
 }
 
-.proposal-button {
-  padding: 16px 64px;
-  border-radius: 12px;
-  color: #fff;
-  border: none;
-  transition: background-color 0.3s ease-in-out;
+.proposal-list-item div {
+  width: 20px;
+  height: 20px;
+}
+
+.proposal-icon {
+  width: 20px;
+  height: 20px;
+  background-color: var(--green-main);
+  border-radius: 50%;
+  fill: #ffffff;
 }
 
 .proposal-image-content {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(0%, 50%);
+  transform: translate(35%, 63%);
 
+  visibility: hidden;
   z-index: 1;
   aspect-ratio: 214 / 263;
 }
@@ -116,51 +114,201 @@
   object-fit: contain;
 }
 
-
-
-
-
 .background-cards {
   position: absolute;
-  top: 30%;
+  top: 0;
   left: 0;
-  margin-right: 128px;
-  transform: translate(-50%, -27%);
-  max-width: 1024px;
-  height: 520px;
+  width: 100%;
+  height: 100%;
   z-index: 0;
 }
 
 .bg-card {
   position: absolute;
-  inset: 0;
-  border-radius: 30px;
+  border-radius: 16px;
+}
+
+.bg-card.card-1,
+.bg-card.card-2,
+.bg-card.card-3 {
+  min-width: 295px;
+  height: 408px;
+  top: 0;
+  left: 0;
 }
 
 .bg-card.card-1 {
   background-color: #fff;
-  width: 1024px;
-  height: 472px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 3;
 }
 
 .bg-card.card-2 {
   background-color: var(--green-accent);
-  width: 1050px;
-  height: 463px;
-  top: 8px;
-  left: -25px;
-  transform: rotate(-8deg);
+  transform: rotate(-9deg);
 }
 
 .bg-card.card-3 {
   background-color: rgba(255, 255, 255, 0.5);
-  width: 1011px;
-  height: 402px;
-  top: 45px;
-  left: 4px;
   transform: rotate(11deg);
+}
+
+@media screen and (min-width: 768px) {
+  .proposal-container {
+    justify-content: flex-start;
+    max-width: 704px;
+    min-height: 950px;
+    padding: 64px 32px;
+    border-radius: 30px;
+    overflow: visible;
+  }
+
+  .proposal-title {
+    max-width: 640px;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 83px;
+  }
+
+  .title-highlight {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .proposal-list-container {
+    gap: 32px;
+    padding: 64px 32px;
+  }
+
+  .proposal-wraper {
+    width: 100%;
+  }
+
+  .proposal-list {
+    max-width: 451px;
+  }
+
+  .proposal-list-header {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .proposal-list-item {
+    gap: 16px;
+  }
+
+  .proposal-list-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .proposal-list-text.text-1 {
+    max-width: 437px;
+  }
+
+  .proposal-list-text.text-2 {
+    max-width: 381px;
+  }
+
+  .proposal-list-text.text-3 {
+    max-width: 405px;
+  }
+
+  .proposal-list-item div {
+    width: 28px;
+    height: 28px;
+  }
+
+  .proposal-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .proposal-image-content {
+    visibility: visible;
+  }
+
+  .background-cards {
+    left: -15px;
+  }
+
+  .bg-card {
+    border-radius: 30px;
+  }
+
+  .bg-card.card-1,
+  .bg-card.card-2,
+  .bg-card.card-3 {
+    min-width: 668px;
+    height: 500px;
+  }
+
+  .bg-card.card-3 {
+    top: 5px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .proposal-container {
+    display: block;
+    max-width: 1152px;
+    padding: 64px;
+  }
+
+  .proposal-title {
+    max-width: 776px;
+    margin-bottom: 122px;
+  }
+
+  .proposal-list-container {
+    gap: 40px;
+    padding: 64px;
+  }
+
+  .proposal-list {
+    max-width: 654px;
+  }
+
+  .proposal-list-text.text-1 {
+    max-width: 610px;
+  }
+
+  .proposal-list-text.text-2 {
+    max-width: 537px;
+  }
+
+  .proposal-list-text.text-3 {
+    max-width: 580px;
+  }
+
+  .proposal-image-content {
+    transform: translate(0%, 50%);
+  }
+
+  .background-cards {
+    left: 0;
+  }
+
+  .bg-card.card-1,
+  .bg-card.card-2,
+  .bg-card.card-3 {
+    width: 100%;
+  }
+
+  .bg-card.card-1 {
+    height: 472px;
+    z-index: 3;
+  }
+
+  .bg-card.card-2 {
+    height: 463px;
+    top: 8px;
+    left: -25px;
+    transform: rotate(-8deg);
+  }
+
+  .bg-card.card-3 {
+    height: 402px;
+    top: 45px;
+    left: 4px;
+  }
 }
