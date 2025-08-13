@@ -10,7 +10,6 @@
   margin-right: auto;
 }
 
-
 .teachers-section {
   margin-bottom: 80px;
 }
@@ -22,7 +21,6 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-
 }
 
 .teachers-list-item {
@@ -53,19 +51,20 @@
   color: #12141780;
 }
 
-@media screen and (min-width: 375px){
+@media screen and (min-width: 375px) {
   .container-teachers {
     max-width: 375px;
   }
   .teachers-list {
     gap: 32px;
   }
-  .teachers-heading, .teachers-list-item {
+  .teachers-heading,
+  .teachers-list-item {
     max-width: 335px;
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .teachers-section {
     margin-bottom: 100px;
   }
@@ -88,7 +87,7 @@
     margin-bottom: 150px;
   }
   .container-teachers {
-    max-width: unset
+    max-width: unset;
   }
   .teachers-list-item {
     max-width: 232px;

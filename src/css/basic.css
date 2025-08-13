@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--basic-font);
   background-color: var(--white);
@@ -64,10 +68,20 @@ h2 {
 
 .btn {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: var(--green-main);
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+
+  height: 52px;
+  min-width: 160px;
+  width: 100%;
+  max-width: 300px;
+
+  border-radius: 12px;
 }
 
 .btn-primary {
