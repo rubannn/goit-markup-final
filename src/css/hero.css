@@ -1,0 +1,161 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+
+  height: 709px;
+  min-width: 320px;
+  max-width: 375px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-main {
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 40px;
+
+  height: 100%;
+  padding: 0 20px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/hero-mobile-min.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 30px;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/hero-mobile-x2-min.jpg');
+  }
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+.hero-accent {
+  color: var(--green-accent);
+}
+
+.hero-text {
+  display: none;
+}
+
+.cta-btn {
+  margin-bottom: 72px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--white);
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+
+  cursor: pointer;
+}
+
+.scroll-down:hover,
+.scroll-down:focus,
+.scroll-down:active {
+  background-color: var(--green-main);
+  color: var(--white);
+  
+}
+
+.scroll-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--green-main);
+}
+
+.scroll-down:hover > .scroll-icon,
+.scroll-down:focus > .scroll-icon,
+.scroll-down:active > .scroll-icon {
+  fill: var(--white);
+}
+
+
+/* TABLET STYLES */
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 857px;
+    max-width: 768px;
+  }
+
+  .hero-content {
+    justify-content: center;
+    align-items: start;
+    gap: 32px;
+
+    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../img/hero-tablet-min.jpg');
+  }
+
+  @media(min-resolution: 2dppx) {
+    .hero-content {
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../img/hero-tablet-x2-min.jpg');
+    }
+  }
+
+  .hero-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0em;
+
+    max-width: 490px;
+  }
+
+  .scroll-down {
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+  }
+
+}
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 1280px) {
+  .hero {
+    height: 630px;
+    max-width: 1280px;
+  }
+
+  .hero-content {
+    padding: 64px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../img/hero-desk-min.jpg');
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero-content {
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../img/hero-desk-x2-min.jpg');
+    }
+  }
+
+  .hero-title {
+    max-width: 564px;
+  }
+}
