@@ -55,12 +55,19 @@
 
 .header-socials-icon,
 .footer-socials-icon {
-  width: 44px;
-  height: 44px;
+  width: 28px;
+  height: 28px;
 }
 
 .social-links a:hover {
   border-color: var(--green-main);
+  transition: var(--transition-func);
+}
+
+.social-links a:hover .header-socials-icon,
+.social-links a:focus .header-socials-icon {
+  fill: var(--green-main);
+  transition: fill var(--transition-func);
 }
 
 .site-header .container {
@@ -81,4 +88,9 @@
     justify-content: space-between;
     padding: 0 20px;
   }
+}
+
+.site-header .logo:hover {
+  transform: scale(1.1);
+  transition: var(--transition-func);
 }

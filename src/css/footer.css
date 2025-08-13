@@ -16,6 +16,11 @@
   display: block;
 }
 
+.site-footer .logo:hover {
+  transform: scale(1.1);
+  transition: var(--transition-func);
+}
+
 .contact-info {
   margin-bottom: 16px;
 }
@@ -43,7 +48,7 @@
   transition: color 0.3s ease;
 }
 
-.footer-nav a:hover img {
+.footer-nav a:hover {
   color: var(--green-main);
 }
 
@@ -58,10 +63,17 @@
 
 .footer-col-social .social-links a:hover {
   border-color: var(--green-main);
+  transition: var(--transition-func);
 }
 
-.footer-col-social .social-links svg {
+.footer-col-social .social-links .footer-socials-icon {
   fill: var(--white);
+}
+
+.social-links a:hover .footer-socials-icon,
+.social-links a:focus .footer-socials-icon {
+  fill: var(--green-main);
+  transition: fill var(--transition-func);
 }
 
 .legal-links {
