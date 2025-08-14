@@ -12,6 +12,7 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./mobile-menu.css');
 @import url('./hero.css');      /* 02 - "Hero" section */
 @import url('./about.css');     /* 03 - "About us" section */
 @import url('./lessons.css');   /* 04 - "Our lesson" section */
