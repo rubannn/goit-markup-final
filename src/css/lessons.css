@@ -84,12 +84,15 @@
   .lessons-cards-list-item {
     flex: 0 0 calc(50% - 16px);
     min-height: 404px;
+    padding: 32px 16px;
   }
 }
 
 @media (min-width: 1280px) {
   .lessons-cards-list-item {
     flex: 0 0 calc(33.3333% - 64px / 3);
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -115,6 +118,13 @@
 @media (min-width: 768px) {
   .lesson-card-price {
     line-height: 1.37;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .lesson-card-price {
+    margin-bottom: 16px;
   }
 }
 
@@ -131,6 +141,7 @@
   .lesson-card-description {
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 32px;
   }
 }
 
