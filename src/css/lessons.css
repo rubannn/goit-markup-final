@@ -1,0 +1,149 @@
+.lessons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lessons-desc {
+  text-align: center;
+}
+
+@media (min-width: 375px) {
+  .lessons-desc {
+    max-width: 335px;
+  }
+}
+
+@media (min-width: 768px) {
+  .lessons-desc {
+    max-width: 665px;
+  }
+}
+
+.lessons-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 375px) {
+  .lessons-cards-container {
+    max-width: 336px;
+  }
+}
+
+@media (min-width: 768px) {
+  .lessons-cards-container {
+    max-width: 704px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lessons-cards-container {
+    max-width: 1024px;
+  }
+}
+
+.lessons-cards-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .lessons-cards-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lessons-cards-list {
+    flex-wrap: nowrap;
+  }
+}
+
+.lessons-cards-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+  min-height: 400px;
+
+  border-radius: 16px;
+  border: 1px solid var(--green-main);
+  background: var(--white);
+}
+
+@media (min-width: 768px) {
+  .lessons-cards-list-item {
+    flex: 0 0 calc(50% - 16px);
+    min-height: 404px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lessons-cards-list-item {
+    flex: 0 0 calc(33.3333% - 64px / 3);
+  }
+}
+
+.lessons-card-header {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  margin-bottom: 16px;
+}
+
+.lesson-card-price {
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.64px;
+
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .lesson-card-price {
+    line-height: 1.37;
+  }
+}
+
+.lesson-card-description {
+  color: var(--grey-text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .lesson-card-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.lessons-card-btn {
+  margin-top: auto;
+}
+
+.lessons-cards-list-item:nth-child(2) {
+  background-color: var(--green-main);
+}
+
+.lessons-cards-list-item:nth-child(2) .lessons-card-header,
+.lessons-cards-list-item:nth-child(2) .lesson-card-price,
+.lessons-cards-list-item:nth-child(2) .lesson-card-description {
+  color: var(--white);
+}
