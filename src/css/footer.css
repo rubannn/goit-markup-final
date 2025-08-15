@@ -27,6 +27,12 @@ footer {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  display: inline-block;
+  transition: transform 250ms var(--transition-func);
+}
+
+.footer-logo-link:hover {
+  transform: scale(1.1);
 }
 
 .footer-logo-part {
