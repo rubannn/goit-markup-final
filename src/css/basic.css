@@ -52,6 +52,29 @@ h2 {
   margin: 0 auto;
 }
 
+.link-underlined::after,
+.link-underlined:focus::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 50%;
+  height: 2px;
+  background-color: var(--green-main);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition-func);
+  transition-property: transform, opacity;
+}
+
+.link-underlined:hover::after,
+.link-underlined:focus::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
 @media screen and (min-width: 768px) {
   .container-main {
     padding: 0 32px;
@@ -61,7 +84,7 @@ h2 {
 @media screen and (min-width: 1280px) {
   .container-main {
     padding: 0 64px;
-  } 
+  }
 }
 
 /*btns*/
@@ -179,4 +202,3 @@ h2 {
     margin-bottom: 150px;
   }
 }
-

@@ -15,7 +15,7 @@
   --grey-border: rgba(18, 20, 23, 0.102);
   --grey-border-light: rgba(255, 255, 255, 0.1);
 
-  --transition-func: 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   --basic-font: 'Manrope', sans-serif;
 }
