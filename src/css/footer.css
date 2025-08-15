@@ -42,7 +42,7 @@ footer {
   font-style: normal;
   font-weight: 600;
   line-height: 1.29;
-  transition: color 250ms var(--transition-func);
+  transition: color var(--transition-func);
 }
 
 .footer-adr:hover,
@@ -90,7 +90,7 @@ footer {
   font-weight: 600;
   line-height: 1.28571;
   text-decoration: none;
-  transition: color 250ms var(--transition-func);
+  transition: color var(--transition-func);
 }
 
 .footer-nav-link:hover {
@@ -117,7 +117,7 @@ footer {
   width: 100%;
   height: 100%;
   fill: var(--white);
-  transition: fill 250ms var(--transition-func);
+  transition: fill var(--transition-func);
 }
 
 .social-list-link:hover,
@@ -165,7 +165,7 @@ footer {
   line-height: 1.28571;
   letter-spacing: -0.28px;
   text-decoration: none;
-  transition: color 250ms var(--transition-func);
+  transition: color var(--transition-func);
 }
 
 .footer-policy-link:hover,
@@ -207,6 +207,10 @@ footer {
 @media screen and (min-width: 1280px) {
   footer {
     padding: 64px 0 23px;
+  }
+
+  .footer-container {
+    max-width: 1152px;
   }
 
   .footer-blocks {
