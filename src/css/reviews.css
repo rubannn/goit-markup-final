@@ -12,6 +12,7 @@
 .reviews-list {
   display: flex;
   flex-direction: row;
+  min-width: 265px;
   max-width: 335px;
 }
 

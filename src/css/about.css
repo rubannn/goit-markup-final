@@ -15,14 +15,14 @@
 
 @media screen and (min-width: 768px) {
   .about-text {
-  max-width: 658px;
-}
+    max-width: 658px;
+  }
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
-  min-width: 300px;
+  min-width: 265px;
   max-width: 335px;
 }
 
