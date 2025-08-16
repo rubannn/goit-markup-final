@@ -1,35 +1,25 @@
-.application {
-  margin-bottom: 80px;
-}
 .application-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.application-title {
-  margin-bottom: 14px;
-}
+
 .application-text {
   max-width: 335px;
-  margin-bottom: 20px;
-  font-family: var(--basic-font);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  color: rgba(18, 20, 23, 0.8);
 }
 .application-block-wrapper {
   display: none;
 }
+
 .application-form-input,
 .application-form-textarea {
   border: 1px solid var(--grey-border);
   border-radius: 12px;
-  padding: 16px 279px 16px 13px;
+  width: 100%;
+  padding: 16px 13px;
   margin-bottom: 18px;
-  width: 335px;
   height: 50px;
   font-family: var(--basic-font);
   font-weight: 400;
@@ -38,6 +28,7 @@
   color: var(--black);
 }
 .application-form-textarea {
+  resize: none;
   height: 94px;
 }
 input,
@@ -125,7 +116,11 @@ textarea::placeholder {
   margin-bottom: 16px;
   font-family: var(--basic-font);
   line-height: 1.71;
-  padding: 14px 150px;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 265px;
   max-width: 335px;
   border: none;
 }
@@ -143,20 +138,10 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) {
-  .application {
-    margin-bottom: 100px;
-  }
   .application-text {
     min-width: 586px;
-    margin-bottom: 64px;
-    /* padding-left: 59px; */
-    font-size: 18px;
-    line-height: 1.67;
-    color: var(--grey-text);
   }
-  .application-title {
-    margin-bottom: 16px;
-  }
+
   .application-form-input,
   .application-form-textarea {
     width: 500px;

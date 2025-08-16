@@ -1,6 +1,6 @@
 .proposal-section {
-  margin-bottom: 150px;
-  min-width: 335px;
+  /* margin-bottom: 150px; */
+  min-width: 280px;
   padding: 0 20px;
 }
 
@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   max-width: 478px;
-  min-width: 335px;
+  min-width: 280px;
   background-image: var(--bg-gradient);
   border-radius: 16px;
 
@@ -131,10 +131,19 @@
 .bg-card.card-1,
 .bg-card.card-2,
 .bg-card.card-3 {
-  min-width: 295px;
+  /* min-width: 295px; */
+  width: 100%;
   height: 408px;
   top: 0;
   left: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .bg-card.card-1,
+  .bg-card.card-2,
+  .bg-card.card-3 {
+    height: 450px;
+  }
 }
 
 .bg-card.card-1 {
