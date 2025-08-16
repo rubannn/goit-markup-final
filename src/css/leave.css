@@ -40,8 +40,16 @@
 .application-form-textarea {
   height: 94px;
 }
+input::placeholder,
 textarea::placeholder {
   white-space: nowrap;
+  color: var(--black);
+}
+.application-form-input:focus,
+.application-form-textarea:focus,
+.application-form-input:hover,
+.application-form-textarea:hover {
+  border-color: var(--green-main);
 }
 .application-radio-subtitle {
   margin-bottom: 14px;
