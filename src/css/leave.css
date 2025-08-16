@@ -1,0 +1,231 @@
+.application {
+  margin-bottom: 80px;
+}
+.application-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.application-title {
+  margin-bottom: 14px;
+}
+.application-text {
+  max-width: 335px;
+  margin-bottom: 20px;
+  font-family: var(--basic-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.8);
+}
+.application-block-wrapper {
+  display: none;
+}
+.application-form-input,
+.application-form-textarea {
+  border: 1px solid var(--grey-border);
+  border-radius: 12px;
+  padding: 16px 279px 16px 13px;
+  margin-bottom: 18px;
+  width: 335px;
+  height: 50px;
+  font-family: var(--basic-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--black);
+}
+.application-form-textarea {
+  height: 94px;
+}
+input,
+textarea {
+  outline: none;
+}
+input::placeholder,
+textarea::placeholder {
+  white-space: nowrap;
+  color: var(--black);
+}
+.application-form-input:focus,
+.application-form-textarea:focus,
+.application-form-input:hover,
+.application-form-textarea:hover,
+.application-form-input:active,
+.application-form-textarea:active,
+.application-form-input:valid {
+  border-color: var(--green-main);
+}
+.application-form-input:invalid:not(:placeholder-shown) {
+  border-color: firebrick;
+}
+.application-radio-subtitle {
+  margin-bottom: 14px;
+  font-family: var(--basic-font);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+.application-radio-box {
+  margin-bottom: 40px;
+}
+.application-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.radio-label-text {
+  font-family: var(--basic-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
+}
+.application-radio-button {
+  font-family: var(--basic-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
+}
+.application-radio-button[type='radio'] {
+  position: relative;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  background-color: var(--white);
+  cursor: pointer;
+}
+.application-radio-button[type='radio']:checked {
+  border-color: var(--green-main);
+}
+.application-radio-button[type='radio']:checked::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--green-main);
+  border-radius: 12px;
+}
+.application-form-button {
+  margin-bottom: 16px;
+  font-family: var(--basic-font);
+  line-height: 1.71;
+  padding: 14px 150px;
+  max-width: 335px;
+  border: none;
+}
+.privecy-policy-text {
+  max-width: 335px;
+  font-family: var(--basic-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--grey-text);
+}
+.privecy-policy {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+@media screen and (min-width: 768px) {
+  .application {
+    margin-bottom: 100px;
+  }
+  .application-text {
+    min-width: 586px;
+    margin-bottom: 64px;
+    padding-left: 59px 0;
+    font-size: 18px;
+    line-height: 1.67;
+    color: var(--grey-text);
+  }
+  .application-title {
+    margin-bottom: 16px;
+  }
+  .application-form-input,
+  .application-form-textarea {
+    width: 500px;
+    height: 56px;
+  }
+  .application-form-textarea {
+    height: 104px;
+  }
+  .application-radio-box {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .application-radio-subtitle {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .application-form-button {
+    line-height: 1.71;
+    padding: 16px 228px;
+    max-width: 500px;
+    height: 60px;
+  }
+  .privecy-policy-text {
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .application-text {
+    min-width: 709px;
+  }
+  .application-block-wrapper {
+    display: block;
+    overflow: hidden;
+    border-radius: 30px;
+    width: 492px;
+    height: 578px;
+    background-color: var(--green-main);
+  }
+  .application-block-container {
+    margin: 20px 20px 40px 20px;
+  }
+  .application-block-subtitle {
+    font-family: var(--basic-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+  .application-block-text {
+    font-family: var(--basic-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .application-wrapp {
+    display: flex;
+    align-items: self-start;
+    gap: 32px;
+  }
+}
