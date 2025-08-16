@@ -40,6 +40,10 @@
 .application-form-textarea {
   height: 94px;
 }
+input,
+textarea {
+  outline: none;
+}
 input::placeholder,
 textarea::placeholder {
   white-space: nowrap;
@@ -48,9 +52,16 @@ textarea::placeholder {
 .application-form-input:focus,
 .application-form-textarea:focus,
 .application-form-input:hover,
-.application-form-textarea:hover {
+.application-form-textarea:hover,
+.application-form-input:active,
+.application-form-textarea:active {
   border-color: var(--green-main);
 }
+.application-form-input:invalid,
+.application-form-textarea:invalid {
+  border-color: firebrick;
+}
+
 .application-radio-subtitle {
   margin-bottom: 14px;
   font-family: var(--basic-font);
