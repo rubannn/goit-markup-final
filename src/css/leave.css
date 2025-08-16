@@ -54,14 +54,15 @@ textarea::placeholder {
 .application-form-input:hover,
 .application-form-textarea:hover,
 .application-form-input:active,
-.application-form-textarea:active {
+.application-form-textarea:active,
+.application-form-input:valid,
+.application-form-textarea:valid {
   border-color: var(--green-main);
 }
-.application-form-input:invalid,
-.application-form-textarea:invalid {
+.application-form-input:invalid:not(:placeholder-shown),
+.application-form-textarea:invalid:not(:placeholder-shown) {
   border-color: firebrick;
 }
-
 .application-radio-subtitle {
   margin-bottom: 14px;
   font-family: var(--basic-font);
